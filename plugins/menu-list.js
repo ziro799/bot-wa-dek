@@ -15,15 +15,15 @@ let { perfomance } = require('perf_hooks')
 let moment = require('moment-timezone')
 const defaultMenu = {
   before:`
-  ⬣───「 *DASHBOARD* 」───⬣
+  ㉿───「 *DASHBOARD* 」───㉿
   
-┌─── 「 TODAY 」───⬣
+┌─── 「 TODAY 」───㉿
 │☂︎ *Days:* %week %weton
 │☂︎ *Date:* %date
 │☂︎ *Islamic Date:* %dateIslamic
 │☂︎ *Time:* %time
-╰────────────⬣
-┌───「 INFO USER 」──⬣
+╰────────────㉿
+┌───「 INFO USER 」──㉿
 │☂︎ Name: %name
 │☂︎ Status: --
 │☂︎ Limit: %limit
@@ -31,15 +31,15 @@ const defaultMenu = {
 │☂︎ Exp: %totalexp
 │☂︎ Level: %level
 │☂︎ Role: %role
-╰────────────⬣
-⃝▣──「 *INFO CMD* 」───⬣
+╰────────────㉿
+⃝▣──「 *INFO CMD* 」───㉿
 │ *Ⓟ* = Premium
 │ *Ⓛ* = Limit
-▣────────────⬣
+▣────────────㉿
 %readmore`.trimStart(), 
- header: '⃝▣──「 %category 」───⬣',
+ header: '⃝▣──「 %category 」───㉿',
  body: '│○ %cmd %isPremium %islimit',
- footer: '▣───────────⬣\n',
+ footer: '▣───────────㉿\n',
   after: ``,
 }
 
@@ -225,17 +225,26 @@ let help = Object.values(global.plugins).filter(plugin => !plugin.disabled).map(
       const template = generateWAMessageFromContent(m.key.remoteJid, proto.Message.fromObject({
         listMessage: {
             title: `${ucapan()}, ${name}`,
-            description: `┏━━━━〔 *${wm}* 〕━━━⬣
+            description: `┏━━━━〔 *${wm}* 〕━━━㉿
 ┃⌬ Aktif selama ${uptime}
 ┃⌬ ${Object.keys(global.db.data.users).length} Pengguna
 ┃⌬ Mode : ${global.opts['self'] ? 'Self' : 'publik'}
 ┃⌬ ${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length} Chat Terbanned
 ┃⌬ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length} Pengguna Terbanned
-┃⌬ 𝕬𝖗𝖚𝖑𝖑𝕺𝖋𝖈
-┗━━━━━━━━━━━━━━━⬣`,
+┗━━━━━━━━━━━━━━━㉿
+〔  THANKS TO  〕
+⫹⫺ Allah SWT
+⫹⫺ Orang Tua
+⫹⫺ Kesabaran
+⫹⫺ Penyemangat
+⫹⫺ Ilmanhdyt
+⫹⫺ Hyzer
+⫹⫺ ArullOfc
+╰─────────────㉿`,
             buttonText: 'LIST MENU',
             listType: 1,
-            footerText: "𝚂𝙸𝙻𝙰𝙷𝙺𝙰𝙽 𝙿𝙸𝙻𝙸𝙷 𝙼𝙴𝙽𝚄 𝙳𝙸 𝙱𝙰𝚆𝙰𝙷",
+            footerText: "𝐬𝐢𝐥𝐚𝐡𝐤𝐚𝐧 𝐩𝐢𝐥𝐢𝐡 𝐦𝐞𝐧𝐮 𝐝𝐢𝐛𝐚𝐰𝐚𝐡
+",
             mtype: 'listMessage',
             sections: [
               {
