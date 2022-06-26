@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://telegra.ph/file/780bc71b9c7a90cb84e58.jpg" alt="Hyzer-MD" width="250"/>
+<img src="https://telegra.ph/file/3f05efd6a4224f9bc6894.jpg" alt="Hyzer-MD" width="250"/>
 
 
 </p>
@@ -21,9 +21,9 @@
 
 ---
 
-# Hyzer Whatsapp MD
+# Arull Whatsapp MD
 ## Information
-> HyBot whatsapp using a Baileys library.
+> Bot whatsapp using a Baileys library.
 > Jika kamu menemukan semacam bug, harap untuk dimaklumi sementara
 >
 > • NOTE: INI SC GAK BISA BUAT SESSION DI TERMUX YA, JADI KALIAN CARI SESSION DULU PAKAI SC LAIN 
@@ -95,7 +95,7 @@ let message = await prepareWAMessageMedia({ video: fs.readFileSync('./media/menu
 
 ## HOW TO CONNECT TO MONGODB WHEN RUN IN HEROKU
 
-* Create account and database in mongodb atlas [`watch here`](https://youtu.be/rPqRyYJmx2g)
+* Create account and database in mongodb atlas [`watch here`](https://youtu.be/w1iMJS0ib-w)
 * when you already have a database, you just need to take mongourl
 * Put mongourl in Procfile `web: node . --db 'mongourl'`
 * Example `worker: node . --db 'mongodb+srv://Paquito1923:<password>@cluster0.wwdwr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'`
@@ -128,7 +128,7 @@ pkg install nodejs
 pkg install ffmpeg
 pkg install imagemagick
 pkg install yarn
-git clone https://github.com/Hyzerr/Hyzer-MD-V2
+git clone https://github.com/Warikrr/Hyzer-MD-V2
 cd Hyzer-MD-V2
 yarn
 mc
