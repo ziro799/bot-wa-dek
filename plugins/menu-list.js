@@ -244,7 +244,6 @@ let help = Object.values(global.plugins).filter(plugin => !plugin.disabled).map(
             buttonText: 'LIST MENU',
             listType: 1,
             footerText: "𝐬𝐢𝐥𝐚𝐡𝐤𝐚𝐧 𝐩𝐢𝐥𝐢𝐡 𝐦𝐞𝐧𝐮 𝐝𝐢𝐛𝐚𝐰𝐚𝐡",
-",
             mtype: 'listMessage',
             sections: [
               {
