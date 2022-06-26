@@ -40,7 +40,16 @@ const defaultMenu = {
  header: '⃝▣──「 %category 」───㉿',
  body: '│○ %cmd %isPremium %islimit',
  footer: '▣───────────㉿\n',
-  after: ``,
+  after: `
+〔  THANKS TO  〕
+⫹⫺ Allah SWT
+⫹⫺ Orang Tua
+⫹⫺ Kesabaran
+⫹⫺ Penyemangat
+⫹⫺ Ilmanhdyt
+⫹⫺ Hyzer
+⫹⫺ ArullOfc
+╰─────────────㉿`,
 }
 
 let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
@@ -231,16 +240,7 @@ let help = Object.values(global.plugins).filter(plugin => !plugin.disabled).map(
 ┃⌬ Mode : ${global.opts['self'] ? 'Self' : 'publik'}
 ┃⌬ ${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length} Chat Terbanned
 ┃⌬ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length} Pengguna Terbanned
-┗━━━━━━━━━━━━━━━㉿
-〔  THANKS TO  〕
-⫹⫺ Allah SWT
-⫹⫺ Orang Tua
-⫹⫺ Kesabaran
-⫹⫺ Penyemangat
-⫹⫺ Ilmanhdyt
-⫹⫺ Hyzer
-⫹⫺ ArullOfc
-╰─────────────㉿`,
+┗━━━━━━━━━━━━━━━㉿`,
             buttonText: 'LIST MENU',
             listType: 1,
             footerText: "𝐬𝐢𝐥𝐚𝐡𝐤𝐚𝐧 𝐩𝐢𝐥𝐢𝐡 𝐦𝐞𝐧𝐮 𝐝𝐢𝐛𝐚𝐰𝐚𝐡
