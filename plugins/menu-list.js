@@ -226,12 +226,12 @@ let help = Object.values(global.plugins).filter(plugin => !plugin.disabled).map(
         listMessage: {
             title: `${ucapan()}, ${name}`,
             description: `┏━━━━〔 *${wm}* 〕━━━⬣
-┃⬡ Aktif selama ${uptime}
-┃⬡ ${Object.keys(global.db.data.users).length} Pengguna
-┃⬡ Mode : ${global.opts['self'] ? 'Self' : 'publik'}
-┃⬡ ${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length} Chat Terbanned
-┃⬡ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length} Pengguna Terbanned
-┃⬡ スパムしないでください
+┃⌬ Aktif selama ${uptime}
+┃⌬ ${Object.keys(global.db.data.users).length} Pengguna
+┃⌬ Mode : ${global.opts['self'] ? 'Self' : 'publik'}
+┃⌬ ${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length} Chat Terbanned
+┃⌬ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length} Pengguna Terbanned
+┃⌬ 𝕬𝖗𝖚𝖑𝖑𝕺𝖋𝖈
 ┗━━━━━━━━━━━━━━━⬣`,
             buttonText: 'LIST MENU',
             listType: 1,
@@ -417,7 +417,7 @@ let help = Object.values(global.plugins).filter(plugin => !plugin.disabled).map(
            hydratedButtons: [{
             urlButton: {
                displayText: 'MY WEBSITE',
-               url: 'https://Hyzerr.github.io/'
+               url: 'https://youtube.com/channel/UC1ikkqsPvtWuE_QonsET1yg'
              }
 
            },
