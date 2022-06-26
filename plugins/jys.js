@@ -13,7 +13,7 @@ let esce = `
 Hai ${ye} Lagi Nyari Sc Ya? 
 
 Nih Link Sc Nya Dibawah :
-https://youtu.be/AqIPxerS7XI
+Tar
 
 _*Jangan Lupa Di Subscribe*_`
      const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
