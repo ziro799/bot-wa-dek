@@ -12,6 +12,6 @@ handler.tags = ['group']
 handler.command = /^(tagall)$/i
 
 handler.group = true
-handler.admin = true
-
+handler.admin = false
+handler.owner = true
 module.exports = handler
