@@ -1,5 +1,5 @@
 {
-  "creds": {
+ p "creds": {
     "noiseKey": {
       "private": {
         "type": "Buffer",
