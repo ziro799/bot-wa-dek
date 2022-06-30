@@ -8,9 +8,9 @@ let handler = async (m, { conn, usedPrefix }) => {
   } catch (e) {
 
   } finally {
-    let about = (await conn.getStatus(who).catch(console.error) || {}).status || ''
-    if (typeof global.db.data.users[who] == "undefined") {
-      global.db.data.users[who] = {
+    let { name, premium, level, limit, exp, lastclaim, registered, regTime, age } = global.DATABASE.data.users[m.sender]
+    let username = conn.getName(who)
+    let str = `
         exp: 0,
         limit: 10,
         lastclaim: 0,
